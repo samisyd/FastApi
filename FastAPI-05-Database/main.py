@@ -1,3 +1,4 @@
+# This code defines a FastAPI application that serves both HTML pages and a RESTful API for managing users and posts. It uses SQLAlchemy for database interactions and Jinja2 for templating. The application includes routes for creating, retrieving, updating, and deleting users and posts, as well as custom error handling for HTTP exceptions and validation errors. The use of Annotated with Depends allows for easy dependency injection of the database session into the route handlers.
 from typing import Annotated
 
 from fastapi import Depends, FastAPI, HTTPException, Request, status
